@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Install Screenberry &mdash; Screenberry Linux Quickstart  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Setup" href="03_setup.html" />
+    <link rel="prev" title="Introduction" href="01_introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Screenberry Linux Quickstart
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Install Screenberry</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#download-and-install">Download and Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usb-license-dongle">USB License Dongle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_setup.html">Setup</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Screenberry Linux Quickstart</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Install Screenberry</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="install-screenberry">
+<h1>Install Screenberry<a class="headerlink" href="#install-screenberry" title="Permalink to this headline">¶</a></h1>
+<p>In this example we are going to install a <strong>One-computer setup</strong> on <em>Ubuntu 20.04 LTS</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>One-computer setup</strong> =&gt; The <em>Media Server</em> and the <em>Operator Workstation</em> are run from the same computer. This setup is especially useful in the earlier stages when a user is familiarizing themselves with Screenberry functionality.</p>
+<p><strong>Two-computer setup</strong> =&gt; One computer is used as the <em>Media Server</em> and a second is used as the <em>Operator Workstation</em>.</p>
+</div>
+<div class="section" id="download-and-install">
+<h2>Download and Install<a class="headerlink" href="#download-and-install" title="Permalink to this headline">¶</a></h2>
+<p>Download the latest linux setup files on <a class="reference external" href="https://screenberry.com">https://screenberry.com</a>
+or ask the support to get a link for the latest version.</p>
+<p>Open a terminal and type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">f</span> <span class="n">Screenberry2</span><span class="o">-</span><span class="mf">2.</span><span class="o">*.*.</span><span class="n">deb</span>
+</pre></div>
+</div>
+<p>or:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">Screenberry2</span><span class="o">-</span><span class="mf">2.</span><span class="o">*.*.</span><span class="n">deb</span>
+</pre></div>
+</div>
+<p>and wait until install finishes.</p>
+<p>Also download the latest <a class="reference external" href="https://supportportal.gemalto.com/csm/?id=kb_article_view&amp;sysparm_article=KB0018314">sentinel license dongle software</a>
+unpack it and install.</p>
+<p>In your system menu you will find two new entries:</p>
+<img alt="_images/02_menu_entry.png" src="_images/02_menu_entry.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Screenberry2Launcher will launch the <em>Media Server</em></p>
+<p>ScreenberryPanelLauncher will launch the <em>Operator Panel</em></p>
+</div>
+</div>
+<div class="section" id="usb-license-dongle">
+<h2>USB License Dongle<a class="headerlink" href="#usb-license-dongle" title="Permalink to this headline">¶</a></h2>
+<p>You need to connect the USB License Dongle otherwise Screenberry will not run.</p>
+<img alt="_images/02_dongle.png" src="_images/02_dongle.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On Windows Screenberry runs without dongle in demo mode, not on Linux!</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="03_setup.html" class="btn btn-neutral float-right" title="Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="01_introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Marc-André Gasser
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
