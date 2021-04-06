@@ -1,10 +1,17 @@
 # Screenberry_Manual
-unofficial Screenberry Manual for Linux users
+
+Unofficial Screenberry Quickstart Manual for Linux users.
+
+Made with sphinx.
 
 
-Currently not available on gh-pages or on any webserver, hopefully coming soon (need to figure out how to properly render html pages with styleshetts on github).
-However,
-to view the manual, click on top right the green "Code" button, download as *.zip, extract it, navigate to the *"/docs/html"* folder  and open *index.html* in your webbrowser.
+To view the manual, visit: 
+https://magdesign.github.io/Screenberry_Manual/html/index.html
 
-Contributs are very welcome.
+The Official Screenberry Manual is located [here.](https://help.screenberry.com/).
+
+
+
+
+Contributions are very welcome.
 
