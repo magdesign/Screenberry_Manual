@@ -33,7 +33,7 @@ Insert Nodes
 .. image:: _images/04_node_graph.png
 
 
-2. Right click somewhere in the *Node Graph* window or use the keyboard shortcut (undefined yet!) to add nodes:
+2. Right click somewhere in the *Node Graph* window or use the keyboard shortcut ('N') to add nodes:
 
 
 .. image:: _images/04_add_nodes.png
