@@ -16,6 +16,7 @@ Welcome to Screenberry Linux Quickstart
    03_setup
    04_usage
    05_basic_mapping
+   06_advanced_mapping
    10_list_of_nodes
    20_organizing_media
    21_media_playback
