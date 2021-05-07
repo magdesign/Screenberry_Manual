@@ -19,3 +19,4 @@ Welcome to Screenberry Linux Quickstart
    10_list_of_nodes
    20_organizing_media
    21_media_playback
+   90_PocketVJ_workflow
