@@ -1,0 +1,236 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Realtime Input with USB Grabber &mdash; Screenberry Linux Quickstart  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="List of Nodes" href="10_list_of_nodes.html" />
+    <link rel="prev" title="Advanced Mapping Techniques" href="06_advanced_mapping.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Screenberry Linux Quickstart
+          
+
+          
+            
+            <img src="_static/screenberry_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_installation.html">Install Screenberry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_basic_mapping.html">Basic Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_advanced_mapping.html">Advanced Mapping Techniques</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Realtime Input with USB Grabber</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_list_of_nodes.html">List of Nodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="20_organizing_media.html">Organizing Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="21_media_playback.html">Media Playback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="90_PocketVJ_workflow.html">PocketVJ Workflow</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Screenberry Linux Quickstart</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Realtime Input with USB Grabber</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="realtime-input-with-usb-grabber">
+<h1>Realtime Input with USB Grabber<a class="headerlink" href="#realtime-input-with-usb-grabber" title="Permalink to this headline">¶</a></h1>
+<p>In this example we will use an Elgato Cam Link 4k video Grabber, but you might use any regular USB Cam.</p>
+<a class="reference internal image-reference" href="_images/07_camlink4k.png"><img alt="_images/07_camlink4k.png" src="_images/07_camlink4k.png" style="width: 200px;" /></a>
+<p>First install the needed dependencies:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">v4l2loopback</span><span class="o">-</span><span class="n">dkms</span> <span class="n">v4l2loopback</span><span class="o">-</span><span class="n">utils</span> <span class="n">v4l</span><span class="o">-</span><span class="n">utils</span> <span class="n">v4l2loopback</span><span class="o">-</span><span class="n">source</span> <span class="n">v4l2</span><span class="o">-</span><span class="n">loopback</span><span class="o">-</span><span class="n">utils</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While working on a blank workspace, you first need to add a Display and a Canvas, otherwise there will be no option to select your USBCamera source!</p>
+</div>
+<p>Make a workspace like this,
+and select your USB input:</p>
+<img alt="_images/07_cam_workspace.png" src="_images/07_cam_workspace.png" />
+<p>For mapping, make a workspace like this:</p>
+<img alt="_images/07_cam_workspace2.png" src="_images/07_cam_workspace2.png" />
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="10_list_of_nodes.html" class="btn btn-neutral float-right" title="List of Nodes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="06_advanced_mapping.html" class="btn btn-neutral float-left" title="Advanced Mapping Techniques" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Marc-André Gasser
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

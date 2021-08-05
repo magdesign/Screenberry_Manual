@@ -31,6 +31,12 @@ or:
 
 and wait until install finishes.
 
+Under Ubuntu/Debian you might install following dependencies:
+
+::
+
+    sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-xkb-dev libxkbcommon-x11-0
+
 Also download the latest `sentinel license dongle software <https://supportportal.gemalto.com/csm/?id=kb_article_view&sysparm_article=KB0018314>`_
 unpack it and install.
 
