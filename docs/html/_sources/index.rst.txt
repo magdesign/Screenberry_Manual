@@ -18,6 +18,7 @@ Welcome to Screenberry Linux Quickstart
    05_basic_mapping
    06_advanced_mapping
    07_realtime_input
+   08_antialiasing
    10_list_of_nodes
    20_organizing_media
    21_media_playback

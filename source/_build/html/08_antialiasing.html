@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to Screenberry Linux Quickstart &mdash; Screenberry Linux Quickstart  documentation</title>
+  <title>Antialiasing &mdash; Screenberry Linux Quickstart  documentation</title>
   
 
   
@@ -36,7 +36,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction" href="01_introduction.html" /> 
+    <link rel="next" title="List of Nodes" href="10_list_of_nodes.html" />
+    <link rel="prev" title="Realtime Input with USB Grabber" href="07_realtime_input.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -50,7 +51,7 @@
           
 
           
-            <a href="#" class="icon icon-home" alt="Documentation Home"> Screenberry Linux Quickstart
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Screenberry Linux Quickstart
           
 
           
@@ -82,7 +83,7 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="01_introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_installation.html">Install Screenberry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_setup.html">Setup</a></li>
@@ -90,7 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="05_basic_mapping.html">Basic Mapping</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06_advanced_mapping.html">Advanced Mapping Techniques</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_realtime_input.html">Realtime Input with USB Grabber</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08_antialiasing.html">Antialiasing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Antialiasing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="10_list_of_nodes.html">List of Nodes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="20_organizing_media.html">Organizing Media</a></li>
 <li class="toctree-l1"><a class="reference internal" href="21_media_playback.html">Media Playback</a></li>
@@ -110,7 +111,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">Screenberry Linux Quickstart</a>
+          <a href="index.html">Screenberry Linux Quickstart</a>
         
       </nav>
 
@@ -139,9 +140,9 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Welcome to Screenberry Linux Quickstart</li>
+      <li>Antialiasing</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -158,54 +159,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-screenberry-linux-quickstart">
-<h1>Welcome to Screenberry Linux Quickstart<a class="headerlink" href="#welcome-to-screenberry-linux-quickstart" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="01_introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_installation.html">Install Screenberry</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="02_installation.html#download-and-install">Download and Install</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_installation.html#usb-license-dongle">USB License Dongle</a></li>
+  <div class="section" id="antialiasing">
+<h1>Antialiasing<a class="headerlink" href="#antialiasing" title="Permalink to this headline">¶</a></h1>
+<p>Antialiasing is used to prevent “stairs” as shown in the picture below:</p>
+<img alt="_images/08_antialiasing_example.png" src="_images/08_antialiasing_example.png" />
+<p>You find the setting in the menu of Canvas:</p>
+<img alt="_images/08_antialiasing_setting.png" src="_images/08_antialiasing_setting.png" />
+<p>If you have a Nvidia GPU, also make sure to check the Antaliasing settings in there:</p>
+<img alt="_images/08_antialiasing_nvidia.png" src="_images/08_antialiasing_nvidia.png" />
+<p>While doing Bézier distortion, the setting was not enough smooth for my purpose, so
+here is a workaround:</p>
+<ul class="simple">
+<li><p>create a RenderTarget which has 2x the size of your Canvas, enable Multisample Anti-Antialising.</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="03_setup.html">Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="03_setup.html#setup-graphics-card">Setup Graphics Card</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_setup.html#power-management">Power Management</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="04_usage.html">Usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="04_usage.html#launch">Launch</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_usage.html#creating-a-project">Creating a Project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_usage.html#insert-nodes">Insert Nodes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_usage.html#setup-output-monitor">Setup Output Monitor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_usage.html#insert-media">Insert Media</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_usage.html#item-settings">Item Settings</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="05_basic_mapping.html">Basic Mapping</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="05_basic_mapping.html#quad-mapping">Quad Mapping</a></li>
-<li class="toctree-l2"><a class="reference internal" href="05_basic_mapping.html#masking">Masking</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="06_advanced_mapping.html">Advanced Mapping Techniques</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_realtime_input.html">Realtime Input with USB Grabber</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08_antialiasing.html">Antialiasing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="10_list_of_nodes.html">List of Nodes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="10_list_of_nodes.html#d">3D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="10_list_of_nodes.html#audio">Audio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="10_list_of_nodes.html#list-needs-to-be-continued">List needs to be continued….</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="20_organizing_media.html">Organizing Media</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="20_organizing_media.html#media-library-view">Media Library View</a></li>
-<li class="toctree-l2"><a class="reference internal" href="20_organizing_media.html#adding-media-files">Adding Media Files</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="21_media_playback.html">Media Playback</a></li>
-<li class="toctree-l1"><a class="reference internal" href="90_PocketVJ_workflow.html">PocketVJ Workflow</a></li>
-</ul>
-</div>
+<img alt="_images/08_antalising_upscale.png" src="_images/08_antalising_upscale.png" />
 </div>
 
 
@@ -216,8 +183,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="01_introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="10_list_of_nodes.html" class="btn btn-neutral float-right" title="List of Nodes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="07_realtime_input.html" class="btn btn-neutral float-left" title="Realtime Input with USB Grabber" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
