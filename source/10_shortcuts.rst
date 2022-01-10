@@ -5,6 +5,7 @@ List of keyboard shortcuts:
 
 .. image:: _images/10_shortcuts.png
 
+Moving things => WASD
 
 Adding nodes => N
 
@@ -13,7 +14,7 @@ Video Preview => Alt (move with mouse over a cable)
 
 
 Disable snapping => Shift
-or global
+or global menu selection:
 
 .. image:: _images/10_snapping.jpg
 
@@ -22,10 +23,6 @@ or global
 
 
 
-
-Moving things => WASD
-
-******************************
 
 .. note::
 
