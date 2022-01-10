@@ -1,5 +1,5 @@
-List of Nodes
-=============
+Shortcuts
+=========
 
 List of keyboard shortcuts:
 
