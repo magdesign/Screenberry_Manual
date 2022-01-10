@@ -19,7 +19,7 @@ Welcome to Screenberry Linux Quickstart
    06_advanced_mapping
    07_realtime_input
    08_antialiasing
-   10_list_of_nodes
+   10_shortcuts
    20_organizing_media
    21_media_playback
    90_PocketVJ_workflow

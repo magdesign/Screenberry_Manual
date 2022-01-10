@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>List of Nodes &mdash; Screenberry Linux Quickstart  documentation</title>
   
@@ -16,7 +16,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -29,7 +32,6 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -37,7 +39,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Organizing Media" href="20_organizing_media.html" />
-    <link rel="prev" title="Realtime Input with USB Grabber" href="07_realtime_input.html" /> 
+    <link rel="prev" title="Antialiasing" href="08_antialiasing.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -51,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Screenberry Linux Quickstart
+            <a href="index.html" class="icon icon-home"> Screenberry Linux Quickstart
           
 
           
@@ -91,12 +93,8 @@
 <li class="toctree-l1"><a class="reference internal" href="05_basic_mapping.html">Basic Mapping</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06_advanced_mapping.html">Advanced Mapping Techniques</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_realtime_input.html">Realtime Input with USB Grabber</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">List of Nodes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#d">3D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#audio">Audio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#list-needs-to-be-continued">List needs to be continued….</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="08_antialiasing.html">Antialiasing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">List of Nodes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="20_organizing_media.html">Organizing Media</a></li>
 <li class="toctree-l1"><a class="reference internal" href="21_media_playback.html">Media Playback</a></li>
 <li class="toctree-l1"><a class="reference internal" href="90_PocketVJ_workflow.html">PocketVJ Workflow</a></li>
@@ -140,6 +138,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -151,7 +151,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
         
       </li>
     
@@ -165,52 +165,18 @@
             
   <div class="section" id="list-of-nodes">
 <h1>List of Nodes<a class="headerlink" href="#list-of-nodes" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="d">
-<h2>3D<a class="headerlink" href="#d" title="Permalink to this headline">¶</a></h2>
-<dl class="simple">
-<dt>Camera3D</dt><dd><p>Adds a virtual camera that can be added to a 3D scene.</p>
-</dd>
-<dt>Object</dt><dd><p>Creates a primitive 3D object (Sphere, Box, Cylinder, or Torus) that can be added to a 3D scene.</p>
-</dd>
-<dt>ObjectFile</dt><dd><p>Loads a 3D object from a file that can be added to a 3D scene.</p>
-</dd>
-<dt>ObjectFileSaver</dt><dd><p>Saves a 3D object to a file (OBJ or FBX formats).</p>
-</dd>
-<dt>ObjectTransform</dt><dd><p>Allows the transformation of multiple 3D objects as one.</p>
-</dd>
-<dt>Projector</dt><dd><p>Adds a virtual projector for a 3D scene.</p>
-</dd>
-<dt>Remap</dt><dd><p>Uses UV mapping data to reapply a 2D source image as a texture on a 3D object.</p>
-</dd>
-<dt>Scene</dt><dd><p>Creates a 3D scene – a virtual 3D environment where 3D objects can be added, positioned, and edited.</p>
-</dd>
-<dt>Transform3D</dt><dd><p>Generates or receives a transformation matrix for 3D objects. Multiple Transform3D nodes can be chained together to perform complex transformations.</p>
-</dd>
-</dl>
-</div>
-<div class="section" id="audio">
-<h2>Audio<a class="headerlink" href="#audio" title="Permalink to this headline">¶</a></h2>
-<dl class="simple">
-<dt>AudioIn</dt><dd><p>Captures audio from available audio devices.</p>
-</dd>
-<dt>AudioOut</dt><dd><p>Outputs audio to the selected audio device.</p>
-</dd>
-<dt>DTMFGenerator</dt><dd><p>Generates Dual-Tone Multi-Frequency (DTMF) signals.</p>
-</dd>
-<dt>SoundEffect</dt><dd><p>Adds sound effects to the audio output.</p>
-</dd>
-<dt>ToneGenerator</dt><dd><p>Generates an audio tone based on the input frequency.</p>
-</dd>
-</dl>
-</div>
-<div class="section" id="list-needs-to-be-continued">
-<h2>List needs to be continued….<a class="headerlink" href="#list-needs-to-be-continued" title="Permalink to this headline">¶</a></h2>
+<p>List of keyboard shortcuts:</p>
+<img alt="_images/10_shortcuts.png" src="_images/10_shortcuts.png" />
+<p>Disable snapping =&gt; Shift
+or global</p>
+<img alt="_images/10_snapping.jpg" src="_images/10_snapping.jpg" />
+<p>Adding nodes =&gt; N</p>
+<p>Video Preview =&gt; Alt (move with mouse over a cable)</p>
+<p>Moving things =&gt; WASD</p>
+<hr class="docutils" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>Following Nodes might not work under Linux:</strong></p>
-<p>TouchEngine integration</p>
-<p>Web Server =&gt; do I need to locate Nginx? get infos for a tut…</p>
-</div>
+<p>Not all docuemnted yet.</p>
 </div>
 </div>
 
@@ -219,37 +185,29 @@
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="20_organizing_media.html" class="btn btn-neutral float-right" title="Organizing Media" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="07_realtime_input.html" class="btn btn-neutral float-left" title="Realtime Input with USB Grabber" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="20_organizing_media.html" class="btn btn-neutral float-right" title="Organizing Media" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="08_antialiasing.html" class="btn btn-neutral float-left" title="Antialiasing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2021, Marc-André Gasser
+        &#169; Copyright 2021, Marc-André Gasser.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
